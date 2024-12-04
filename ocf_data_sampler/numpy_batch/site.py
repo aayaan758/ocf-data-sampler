@@ -6,12 +6,12 @@ import xarray as xr
 class SiteBatchKey:
 
     generation = "site"
-    site_capacity_kwp = "site_capacity_kwp"
-    site_time_utc = "site_time_utc"
-    site_t0_idx = "site_t0_idx"
-    site_solar_azimuth = "site_solar_azimuth"
-    site_solar_elevation = "site_solar_elevation"
-    site_id = "site_id"
+    capacity_kwp = "site_capacity_kwp"
+    time_utc = "site_time_utc"
+    t0_idx = "site_t0_idx"
+    solar_azimuth = "site_solar_azimuth"
+    solar_elevation = "site_solar_elevation"
+    id = "site_id"
 
 
 def convert_site_to_numpy_batch(da: xr.DataArray, t0_idx: int | None = None) -> dict:
